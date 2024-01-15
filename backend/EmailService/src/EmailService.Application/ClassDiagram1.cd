@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="EmailService.Application.Common.Mapping.MappingProfiles">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\Mapping\MappingProfiles.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EmailService.Application.Common.Models.Result" Collapsed="true">
+    <Position X="0.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAAAAgAAAACAAAAAAAAAAIA=</HashCode>
+      <FileName>Common\Models\Result.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EmailService.Application.Consumers.BillEmailConsumer">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEIAAAAAgAAAAABAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Consumers\BillEmailConsumer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="EmailService.Application.Consumers.EmailNotificationConsumer">
+    <Position X="3.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEIAAAAAgAAAAABAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Consumers\EmailNotificationConsumer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="EmailService.Application.Consumers.SendTwoFactorAuthCodeConsumer">
+    <Position X="6.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEIAAAAAgAAAAABAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Consumers\SendTwoFactorAuthCodeConsumer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="EmailService.Application.Consumers.UserRegistrationConsumer">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEIAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Consumers\UserRegistrationConsumer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="EmailService.Application.Email.Commands.SendBillEmailCommandHandler" BaseTypeListCollapsed="true">
+    <Position X="5.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAQAAAAAAAgAAAAABAAAQAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Email\Commands\SendBillEmailCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="EmailService.Application.Email.Commands.SendInvitationEmailCommandHandler" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAgAAAAABAAAQAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Email\Commands\SendInvitationEmailCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="EmailService.Application.Email.Commands.SendNotificationHandler" BaseTypeListCollapsed="true">
+    <Position X="3.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAgAAAAAAAAAQAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Email\Commands\SendNotificationCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="EmailService.Application.Email.Commands.SendTwoFactorAuthCodeCommand" BaseTypeListCollapsed="true">
+    <Position X="8.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Email\Commands\SendTwoFactorAuthCodeCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="EmailService.Application.Email.Commands.SendTwoFactorAuthCodeCommandHandler" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAABAAAQAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Email\Commands\SendTwoFactorAuthCodeCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="EmailService.Application.Email.Dto.SendEmailDto">
+    <Position X="6.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAQAIAAAAAAAAAAAQAAAAAACEAAAAA=</HashCode>
+      <FileName>Email\Dto\SendEmailDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EmailService.Application.Email.Dto.SendEmailDtoMultiple">
+    <Position X="9" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAQAIAAAAgAAAAACAAAAAAACAAAAAA=</HashCode>
+      <FileName>Email\Dto\SendEmailDtoMultiple.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="EmailService.Application.Common.Interfaces.IEmailSender" Collapsed="true">
+    <Position X="0.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Common\Interfaces\IEmailSender.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="EmailService.Application.Common.Models.Currency" Collapsed="true">
+    <Position X="0.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Common\Models\Currency.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

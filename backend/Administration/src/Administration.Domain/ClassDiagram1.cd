@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Administration.Domain.Entities.Company">
+    <Position X="2.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABCAQCAACAgAAAAAAAAAAQBGQAAAAAAgAAAIUAEIAA=</HashCode>
+      <FileName>Entities\Company.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Addresses" />
+      <Property Name="BusinessType" />
+      <Property Name="Employees" />
+      <Property Name="PaymentMethods" />
+      <Property Name="PendingActions" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Administration.Domain.Entities.LoginAttempt">
+    <Position X="9" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Entities\LoginAttempt.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="User" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Administration.Domain.Entities.Notification">
+    <Position X="12" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAAEAAAAAgEAJgAAAAA=</HashCode>
+      <FileName>Entities\Notification.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Operation" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Administration.Domain.Entities.PaymentMethod">
+    <Position X="13.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIIAAEAAAAAAAAAAAQAACAAAAAAABAAAAAA=</HashCode>
+      <FileName>Entities\PaymentMethod.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Administration.Domain.Entities.PendingAction">
+    <Position X="4.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAQAABAAAAAA=</HashCode>
+      <FileName>Entities\PendingAction.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Company" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Administration.Domain.Entities.PlaidBankAccount">
+    <Position X="6" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAACAAAAgAAAAAAAAAAAAAAAAAAIAAAAgA=</HashCode>
+      <FileName>Entities\PlaidBankAccount.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Administration.Domain.Entities.PlaidBankIntegration">
+    <Position X="10.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAEAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\PlaidBankIntegration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Administration.Domain.Entities.TwoFactorAuthCode">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAACgAAgAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\TwoFactorAuthCode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Administration.Domain.Entities.User">
+    <Position X="15" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgIAMAAQDIAAEAAEAQAAAAAAAAAAAACEAAABAAAAAg=</HashCode>
+      <FileName>Entities\User.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="TwoFactorAuthCodes" />
+      <Property Name="LoginAttempts" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Administration.Domain.Entities.UserInvitation">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAAgAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\UserInvitation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Administration.Domain.Entities.Address">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAEAIAAAAAAAAAAIAAAABAAIARAAAAAA=</HashCode>
+      <FileName>Entities\Address.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Company" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Administration.Domain.Common.BaseEntity" Collapsed="true">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\BaseEntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="System.Collections.Generic.ICollection&lt;T&gt;" Collapsed="true">
+    <Position X="5.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Enum Name="Administration.Domain.Entities.BusinessType" Collapsed="true">
+    <Position X="12" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgQAAAAAIAEAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>Entities\BusinessType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Administration.Domain.Entities.NotificationOperation" Collapsed="true">
+    <Position X="9.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAoAEAAAA=</HashCode>
+      <FileName>Entities\NotificationOperation.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Administration.Domain.Entities.PaymentMethodType" Collapsed="true">
+    <Position X="7.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQBAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\PaymentMethodType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Administration.Domain.Entities.PendingActionType" Collapsed="true">
+    <Position X="4.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAgAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\PendingActionType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

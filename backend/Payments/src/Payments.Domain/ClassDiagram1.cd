@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Payments.Domain.Entities.Company">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAQAAAAAAAAAAAQAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Company.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Sell" />
+      <Property Name="PaymentStatistics" />
+      <Property Name="Buy" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Payments.Domain.Entities.PaymentStatistic">
+    <Position X="2.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIgAAAAAAAAAAAAAAAAAAEAAAAABAAAAAA=</HashCode>
+      <FileName>Entities\PaymentStatistic.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Company" />
+      <Property Name="Tab" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Payments.Domain.Entities.PlaidTransfer">
+    <Position X="4" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAACAAAAAAAADAQAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\PlaidTransfer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="PlaidTransferEventType" />
+      <Property Name="Transaction" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Payments.Domain.Entities.PlaidTransfersEventSync">
+    <Position X="9.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\PlaidTransferEventSync.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Payments.Domain.Entities.PostponedPayment">
+    <Position X="5.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAgAAAgAAAAAAAAAQCIAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\PostponedPayment.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="PostponedPaymentInfo" />
+      <Property Name="PostponedPaymentType" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Payments.Domain.Entities.PostponedPaymentInfo">
+    <Position X="7.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAABQAAAAAiCAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\PostponedPaymentInfo.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Payments" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Payments.Domain.Entities.Transaction">
+    <Position X="11" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAQAAAQAACQAQAAAQAAAgAAAAAACAA=</HashCode>
+      <FileName>Entities\Transaction.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Seller" />
+      <Property Name="Buyer" />
+      <Property Name="Status" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Payments.Domain.Common.BaseEntity" Collapsed="true">
+    <Position X="4.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\BaseEntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="System.Collections.Generic.ICollection&lt;T&gt;" Collapsed="true">
+    <Position X="2.5" Y="1" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Enum Name="Payments.Domain.Entities.PlaidTransferEventType" Collapsed="true">
+    <Position X="0.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAACAACABAAAAAAAAAQAAAEABAABAAIAAAACA=</HashCode>
+      <FileName>Entities\PlaidTransferEventType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Payments.Domain.Entities.PostponedPaymentType" Collapsed="true">
+    <Position X="2.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAI=</HashCode>
+      <FileName>Entities\PostponedPaymentType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Payments.Domain.Entities.TabType" Collapsed="true">
+    <Position X="6" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEIAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\TabEnum.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Payments.Domain.Entities.TransactionStatus" Collapsed="true">
+    <Position X="7.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAEABAABAAIAAAAAA=</HashCode>
+      <FileName>Entities\TransactionStatus.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
